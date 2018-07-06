@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_ffe8b7</item>//主要色
+        <item name="colorPrimaryDark">@color/color_ffe8b7</item>//暗色
+        <item name="colorAccent">@color/color_white</item>//控件选中色
+        <item name="android:windowBackground">@color/color_f2f2f2</item>//主体背景
+        <!--<item name="statusBarColor">@color/color_titlebar_light_theme</item>-->
+    </style>
+
+</resources>

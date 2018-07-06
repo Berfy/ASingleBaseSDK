@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="@dimen/space_10"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.berfy.sdk.mvpbase.view.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45"
+        android:background="@drawable/button_normal"
+        android:gravity="center"
+        android:text="获取单一权限（相机）"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        ripple:alphaFactor="1"
+        ripple:hover="true"
+        ripple:rippleColor="@color/color_ffe8b7" />
+
+    <cn.berfy.sdk.mvpbase.view.RippleView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_45"
+        android:layout_marginTop="@dimen/space_10"
+        android:background="@drawable/button_normal"
+        android:gravity="center"
+        android:text="获取所有权限（相机）"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        ripple:alphaFactor="1"
+        ripple:hover="true"
+        ripple:rippleColor="@color/color_ffe8b7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="相机"
+            android:textColor="@color/color_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="存储"
+            android:textColor="@color/color_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="定位"
+            android:textColor="@color/color_black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="打电话"
+            android:textColor="@color/color_black" />
+
+    </LinearLayout>
+</LinearLayout>
