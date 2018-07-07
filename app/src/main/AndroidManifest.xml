@@ -2,6 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.berfy.sdk.mvpsdk">
 
+    <!--存储设备-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--相机-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--手机设备信息-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--打电话-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:name=".application.App"
         android:allowBackup="true"
@@ -20,6 +32,7 @@
         <activity android:name=".demo.viewpager.view.StatusBarDemoActivity"></activity>
         <activity android:name=".demo.notify.view.NotifyActivity"></activity>
         <activity android:name=".demo.fragment.view.DemoFragmentActivity"></activity>
+        <activity android:name=".demo.permission.view.PermissionActivity"></activity>
     </application>
 
 </manifest>

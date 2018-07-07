@@ -12,6 +12,7 @@ import cn.berfy.sdk.mvpbase.view.RippleView
 import cn.berfy.sdk.mvpsdk.R.id.*
 import cn.berfy.sdk.mvpsdk.demo.fragment.view.DemoFragmentActivity
 import cn.berfy.sdk.mvpsdk.demo.notify.view.NotifyActivity
+import cn.berfy.sdk.mvpsdk.demo.permission.view.PermissionActivity
 import cn.berfy.sdk.mvpsdk.demo.viewpager.view.StatusBarDemoActivity
 import cn.berfy.sdk.mvpsdk.demo.viewpager.view.ViewPagerDemoActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -37,6 +38,7 @@ class MainActivity : CommonActivity<IBaseView, BasePresenter<IBaseView>>(), View
         btn_statusbar.setOnRippleStateListener(this)
         btn_notify.setOnRippleStateListener(this)
         btn_fragment.setOnRippleStateListener(this)
+        btn_permission.setOnRippleStateListener(this)
     }
 
     override fun initPresenter(): BasePresenter<IBaseView>? {
@@ -88,6 +90,9 @@ class MainActivity : CommonActivity<IBaseView, BasePresenter<IBaseView>>(), View
             }
             btn_fragment -> {
                 startActivity(Intent(mContext, DemoFragmentActivity::class.java))
+            }
+            btn_permission -> {
+                startActivity(Intent(mContext, PermissionActivity::class.java))
             }
         }
     }

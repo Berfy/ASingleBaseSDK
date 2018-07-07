@@ -234,7 +234,7 @@ public class RippleView extends AppCompatButton {
 
     public int adjustAlpha(int color, float factor) {
         int alpha = Math.round(Color.alpha(color) * factor);
-        LogF.d(TAG, "色值" + color + "  透明度" + Color.alpha(color) + "  最终值" + alpha);
+//        LogF.d(TAG, "色值" + color + "  透明度" + Color.alpha(color) + "  最终值" + alpha);
         int red = Color.red(color);
         int green = Color.green(color);
         int blue = Color.blue(color);

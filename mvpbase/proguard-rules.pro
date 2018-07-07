@@ -93,3 +93,9 @@ public *;
 # glide
 -dontwarn com.bumptech.glide.**
 -keep class com.bumptech.glide.**{*;}
+# permission
+-dontwarn com.hjq:xxpermissions.**
+-keep class com.hjq:xxpermissions.**{*;}
+# butterknife
+-dontwarn com.jakewharton:butterknife.**
+-keep class com.jakewharton:butterknife.**{*;}

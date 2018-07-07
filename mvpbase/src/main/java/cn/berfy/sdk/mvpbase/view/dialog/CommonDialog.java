@@ -3,11 +3,13 @@ package cn.berfy.sdk.mvpbase.view.dialog;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
+import android.view.View;
 
 import cn.berfy.sdk.mvpbase.R;
 
 /**
  * 通用确认提示框
+ * 主要封装了一下show和dismiss方法
  *
  * @author Berfy
  * 2018.5.22
@@ -51,6 +53,46 @@ public class CommonDialog {
         mDialog.setButton(AlertDialog.BUTTON_POSITIVE, leftBtnText, leftOnClickListener);
         mDialog.setButton(AlertDialog.BUTTON_NEGATIVE, rightBtnText, rightOnClickListener);
         show();
+    }
+
+    public CommonDialog setContentView(int layoutId) {
+        mDialog.setContentView(layoutId);
+        return this;
+    }
+
+    public CommonDialog setContentView(View v) {
+        mDialog.setContentView(v);
+        return this;
+    }
+
+    public CommonDialog setTitle(String title) {
+        mDialog.setTitle(title);
+        return this;
+    }
+
+    public CommonDialog setMessage(String msg) {
+        mDialog.setMessage(msg);
+        return this;
+    }
+
+    public CommonDialog setButton(int whichButton, CharSequence text, DialogInterface.OnClickListener listener) {
+        mDialog.setButton(whichButton, text, listener);
+        return this;
+    }
+
+    public CommonDialog setButton(int iconResId) {
+        mDialog.setIcon(iconResId);
+        return this;
+    }
+
+    public CommonDialog setCancelable(boolean cancelable) {
+        mDialog.setCancelable(cancelable);
+        return this;
+    }
+
+    public CommonDialog setCanceledOnTouchOutside(boolean cancelable) {
+        mDialog.setCanceledOnTouchOutside(cancelable);
+        return this;
     }
 
     public void show() {
